@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFind - Lost & Found</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🎒 CampusFind</h1>
+    <p>Lost something? Let's find it together!</p>
+
+    <h2>Search Items</h2>
+
+    <input type="text" id="search" placeholder="Search an item">
+    <button onclick="searchItems()">Search</button>
+
+    <h2>Available Items</h2>
+
+    <div id="items">
+        <p>Blue Water Bottle - Lost</p>
+        <p>Wireless Earbuds - Found</p>
+        <p>Data Structures Book - Lost</p>
+    </div>
+
+    <h2>Report an Item</h2>
+
+    <form id="itemForm">
+
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+
+        <br><br>
+
+        <label for="status">Status:</label>
+        <select id="status">
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+
+        <br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+
+        <br><br>
+
+        <button type="submit">Submit Report</button>
+
+    </form>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
